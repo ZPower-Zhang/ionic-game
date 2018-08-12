@@ -25677,3 +25677,169 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-history .list_div {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  padding: 0px 15px;
+}
+
+page-history .list_div .lootery {
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+}
+
+page-history .list_div p {
+  margin-top: 16px;
+  font-size: 12px;
+  color: white !important;
+  word-break: break-all;
+}
+
+page-history .list_cell_content {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  position: relative;
+  padding-right: 30px;
+}
+
+page-history .list_cell_content a {
+  text-decoration: none;
+}
+
+page-history .list_cell_content p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+page-history .list_cell_content p:first-child {
+  margin-bottom: 5px;
+}
+
+page-history .list_cell_content p:first-child span {
+  padding-left: 5px;
+  margin-left: -3px;
+}
+
+page-history .list_cell_content p:last-child span {
+  padding-left: 5px;
+  margin-left: -3px;
+}
+
+page-history .list_cell_content img {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 13px;
+}
+
+page-history .list_cell_content p:last-child
+.list_cell_content img {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 13px;
+}
+
+page-home .content_div {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+}
+
+page-home .content_div .lootery {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: block;
+}
+
+page-home .content_div p {
+  font-size: 12px;
+  color: white !important;
+  word-break: break-all;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+page-home .content_div .desc {
+  margin: 0px 25px;
+  margin-top: 20px;
+  padding: 0px 5px;
+  word-break: normal;
+  color: #fff;
+}
+
+page-home .content_div .desc a {
+  display: inline;
+  color: white;
+  text-decoration: underline;
+}
+
+page-home .content_div .desceng {
+  margin: 0px 25px;
+  margin-top: 5px;
+  word-break: normal;
+  color: #fff;
+}
+
+page-home .content_div .desceng a {
+  color: white;
+  text-decoration: underline;
+}
+
+page-home .content_div .now_block {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+page-home .content_div .number_div {
+  color: white;
+  width: 270px;
+  height: 256px;
+  margin: 0 auto;
+}
+
+page-home .content_div .number_div div {
+  font-family: "DINAlternate-Bold";
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 54px;
+  height: 54px;
+  float: left;
+  text-align: center;
+  line-height: 54px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+page-home .content_div .number_div div[class="active"] {
+  background-color: #BBB;
+}
+
+page-home .content_div .sumit_btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+page-home .content_div .sumit_btn p {
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+}

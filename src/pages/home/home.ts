@@ -1,28 +1,44 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { DomSanitizer } from '@angular/platform-browser';
+import { NavController } from 'ionic-angular';
 
-declare let cordova: any;
+import { HistoryPage } from '../history/history';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  private CreditRuleUrl: any = 'https://vote-test.elastos.org/games/stickrunning/index.html';
+  public curBlock = null
+  public curBlockArray = new Array()
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private sanitizer: DomSanitizer) {
-    this.openIframe()
-    // this.openWallet()
+  public submitParams = ''
+
+  constructor(public navCtrl: NavController) {
+    this.judegDid()
   }
 
-  openWallet() {
-    cordova.plugins.appmanager.StartApp(item.url + "?timestamp=" + new Date().getTime(),
-        function (data) { },
-        function (error) { });
+  // 判断是否DiD登陆
+  judegDid() {
+    let appDid = window.localStorage.getItem('appDid')
+    if(!appDid) {
+      // 没有did登陆->跳转
+      return false
+    }
   }
 
-  openIframe(){
-    this.CreditRuleUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.CreditRuleUrl);
+  goToHistory() {
+    this.navCtrl.push(HistoryPage);
   }
+
+  inputNum(val) {
+    this.curBlock = null
+    this.curBlock = val
+    // this.curBlockArray.push(val)
+    // this.curBlock = this.curBlockArray.join("")
+  }
+
+  submitToElastos() {
+    console.log('11')
+  }
+
 }
